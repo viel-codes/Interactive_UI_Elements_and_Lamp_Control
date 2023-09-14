@@ -59,6 +59,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 rd_venus.setChecked(false);
                 rd_jupiter.setChecked(false);
+                Snackbar.make(mylayout,"Your Answer is Wrong. Mars isn't the largest planet. Keep going!", Snackbar.LENGTH_INDEFINITE)
+                        .setAction("Close", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+
+                            }
+                        }).show();
             }
         });
 
@@ -67,6 +74,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 rd_mars.setChecked(false);
                 rd_jupiter.setChecked(false);
+                Snackbar.make(mylayout, "Your Answer is Wrong. Venus isn't the largest planet. Keep going!", Snackbar.LENGTH_INDEFINITE)
+                        .setAction("Close", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+
+                            }
+                        }).show();
             }
         });
 
@@ -75,6 +89,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 rd_mars.setChecked(false);
                 rd_venus.setChecked(false);
+                Snackbar.make(mylayout, "Your Answer is Correct. Jupiter is indeed the largest planet. Great Job!", Snackbar.LENGTH_INDEFINITE)
+                        .setAction("Close", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+
+                            }
+                        }).show();
             }
         });
 
